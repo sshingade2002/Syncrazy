@@ -7,14 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40237312108FB6900D27737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40237302108FB6900D27737 /* Constants.swift */; };
+		D402373B21093D4800D27737 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D402373A21093D4800D27737 /* Groups.storyboard */; };
+		D402373D21094B2C00D27737 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D402373C21094B2C00D27737 /* ListViewController.swift */; };
+		D426FFC8210A44C7008F5F82 /* ChooseCuisines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */; };
+		D426FFCA210A869A008F5F82 /* ChooseCuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */; };
 		D42C94CC2107A9A900D47C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C94CB2107A9A900D47C02 /* AppDelegate.swift */; };
 		D42C94CE2107A9A900D47C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C94CD2107A9A900D47C02 /* ViewController.swift */; };
 		D42C94D12107A9A900D47C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C94CF2107A9A900D47C02 /* Main.storyboard */; };
 		D42C94D32107A9AB00D47C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42C94D22107A9AB00D47C02 /* Assets.xcassets */; };
 		D42C94D62107A9AB00D47C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C94D42107A9AB00D47C02 /* LaunchScreen.storyboard */; };
+		D42C94DE2107AA2800D47C02 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C94DD2107AA2800D47C02 /* Login.storyboard */; };
+		D47B714021095287007F5037 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B713F21095287007F5037 /* ListViewCell.swift */; };
+		D4960FDC2108ECF100FC3FF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4960FDB2108ECF100FC3FF7 /* GoogleService-Info.plist */; };
+		D4A7B671210FC3CC00E4481E /* SyncUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B670210FC3CC00E4481E /* SyncUsers.swift */; };
+		D4A7B6732110FBD800E4481E /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6722110FBD700E4481E /* Candy.swift */; };
+		D4A7B6752110FE8100E4481E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A7B6742110FE8100E4481E /* Main.storyboard */; };
+		D4A7B6772111114E00E4481E /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6762111114E00E4481E /* GroupViewController.swift */; };
+		D4CA0E90210AC2C0000D3D43 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */; };
+		D4CA0E96210F957A000D3D43 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E95210F957A000D3D43 /* SearchTableViewController.swift */; };
+		D4CA0E98210F99A9000D3D43 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E97210F99A9000D3D43 /* SearchViewController.swift */; };
+		D4DBDFCB2108F1A1009BCF98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCA2108F1A1009BCF98 /* User.swift */; };
+		D4DBDFCD2108F1AD009BCF98 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCC2108F1AC009BCF98 /* UserService.swift */; };
+		D4DBDFD12108F1BC009BCF98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */; };
+		D4DBDFD32108F1BC009BCF98 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */; };
+		E85DD58BEB1BF3E0DA3364AB /* Pods_Syncrazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A9F36FFD7A026F7F81B34 /* Pods_Syncrazy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C6842BE8BC0AF775C6E8E2 /* Pods-Syncrazy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncrazy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy.debug.xcconfig"; sourceTree = "<group>"; };
+		6D3A9F36FFD7A026F7F81B34 /* Pods_Syncrazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syncrazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E29D675614EE39DCA6313DB /* Pods-Syncrazy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncrazy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy.release.xcconfig"; sourceTree = "<group>"; };
+		D40237302108FB6900D27737 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D402373A21093D4800D27737 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
+		D402373C21094B2C00D27737 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseCuisines.storyboard; sourceTree = "<group>"; };
+		D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCuisineViewController.swift; sourceTree = "<group>"; };
 		D42C94C82107A9A800D47C02 /* Syncrazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syncrazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42C94CB2107A9A900D47C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D42C94CD2107A9A900D47C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +50,20 @@
 		D42C94D22107A9AB00D47C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D42C94D52107A9AB00D47C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D42C94D72107A9AB00D47C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42C94DD2107AA2800D47C02 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D47B713F21095287007F5037 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		D4960FDB2108ECF100FC3FF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D4A7B670210FC3CC00E4481E /* SyncUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUsers.swift; sourceTree = "<group>"; };
+		D4A7B6722110FBD700E4481E /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		D4A7B6742110FE8100E4481E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D4A7B6762111114E00E4481E /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D4CA0E95210F957A000D3D43 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		D4CA0E97210F99A9000D3D43 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D4DBDFCA2108F1A1009BCF98 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D4DBDFCC2108F1AC009BCF98 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85DD58BEB1BF3E0DA3364AB /* Pods_Syncrazy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE00538F0C8642248108C587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06C6842BE8BC0AF775C6E8E2 /* Pods-Syncrazy.debug.xcconfig */,
+				8E29D675614EE39DCA6313DB /* Pods-Syncrazy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4023732210917D300D27737 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D42C94CD2107A9A900D47C02 /* ViewController.swift */,
+				D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */,
+				D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */,
+				D402373C21094B2C00D27737 /* ListViewController.swift */,
+				D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */,
+				D4CA0E95210F957A000D3D43 /* SearchTableViewController.swift */,
+				D4CA0E97210F99A9000D3D43 /* SearchViewController.swift */,
+				D4A7B6762111114E00E4481E /* GroupViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D402373321091B8300D27737 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D40237302108FB6900D27737 /* Constants.swift */,
+				D4960FDB2108ECF100FC3FF7 /* GoogleService-Info.plist */,
+				D42C94D72107A9AB00D47C02 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		D402373421091C2400D27737 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4A7B6722110FBD700E4481E /* Candy.swift */,
+				D4DBDFCA2108F1A1009BCF98 /* User.swift */,
+				D47B713F21095287007F5037 /* ListViewCell.swift */,
+				D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */,
+				D4A7B670210FC3CC00E4481E /* SyncUsers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D402373721091EA800D27737 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D42C94DD2107AA2800D47C02 /* Login.storyboard */,
+				D42C94D42107A9AB00D47C02 /* LaunchScreen.storyboard */,
+				D42C94CF2107A9A900D47C02 /* Main.storyboard */,
+				D402373A21093D4800D27737 /* Groups.storyboard */,
+				D4A7B6742110FE8100E4481E /* Main.storyboard */,
+				D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		D42C94BF2107A9A800D47C02 = {
 			isa = PBXGroup;
 			children = (
 				D42C94CA2107A9A900D47C02 /* Syncrazy */,
 				D42C94C92107A9A800D47C02 /* Products */,
+				BE00538F0C8642248108C587 /* Pods */,
+				F5CA12C929D651668E77393C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +159,22 @@
 			isa = PBXGroup;
 			children = (
 				D42C94CB2107A9A900D47C02 /* AppDelegate.swift */,
-				D42C94CD2107A9A900D47C02 /* ViewController.swift */,
-				D42C94CF2107A9A900D47C02 /* Main.storyboard */,
+				D402373721091EA800D27737 /* Storyboard */,
+				D402373421091C2400D27737 /* Models */,
+				D4023732210917D300D27737 /* Controllers */,
+				D402373321091B8300D27737 /* Supporting */,
 				D42C94D22107A9AB00D47C02 /* Assets.xcassets */,
-				D42C94D42107A9AB00D47C02 /* LaunchScreen.storyboard */,
-				D42C94D72107A9AB00D47C02 /* Info.plist */,
+				D4DBDFCC2108F1AC009BCF98 /* UserService.swift */,
 			);
 			path = Syncrazy;
+			sourceTree = "<group>";
+		};
+		F5CA12C929D651668E77393C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A9F36FFD7A026F7F81B34 /* Pods_Syncrazy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D42C94DA2107A9AB00D47C02 /* Build configuration list for PBXNativeTarget "Syncrazy" */;
 			buildPhases = (
+				AA16201A994D7161C331A3CD /* [CP] Check Pods Manifest.lock */,
 				D42C94C42107A9A800D47C02 /* Sources */,
 				D42C94C52107A9A800D47C02 /* Frameworks */,
 				D42C94C62107A9A800D47C02 /* Resources */,
+				9A40E8AA491F2247DD0E5C98 /* [CP] Embed Pods Frameworks */,
+				4186F152D5F393966D51EBEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,7 +238,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D426FFC8210A44C7008F5F82 /* ChooseCuisines.storyboard in Resources */,
+				D42C94DE2107AA2800D47C02 /* Login.storyboard in Resources */,
 				D42C94D62107A9AB00D47C02 /* LaunchScreen.storyboard in Resources */,
+				D4A7B6752110FE8100E4481E /* Main.storyboard in Resources */,
+				D402373B21093D4800D27737 /* Groups.storyboard in Resources */,
+				D4960FDC2108ECF100FC3FF7 /* GoogleService-Info.plist in Resources */,
 				D42C94D32107A9AB00D47C02 /* Assets.xcassets in Resources */,
 				D42C94D12107A9A900D47C02 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +251,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4186F152D5F393966D51EBEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A40E8AA491F2247DD0E5C98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA16201A994D7161C331A3CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Syncrazy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D42C94C42107A9A800D47C02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A7B6772111114E00E4481E /* GroupViewController.swift in Sources */,
+				D4DBDFCD2108F1AD009BCF98 /* UserService.swift in Sources */,
+				D4A7B6732110FBD800E4481E /* Candy.swift in Sources */,
 				D42C94CE2107A9A900D47C02 /* ViewController.swift in Sources */,
+				D47B714021095287007F5037 /* ListViewCell.swift in Sources */,
+				D4A7B671210FC3CC00E4481E /* SyncUsers.swift in Sources */,
 				D42C94CC2107A9A900D47C02 /* AppDelegate.swift in Sources */,
+				D4DBDFD12108F1BC009BCF98 /* LoginViewController.swift in Sources */,
+				D40237312108FB6900D27737 /* Constants.swift in Sources */,
+				D4CA0E90210AC2C0000D3D43 /* TableViewController.swift in Sources */,
+				D4CA0E98210F99A9000D3D43 /* SearchViewController.swift in Sources */,
+				D4DBDFCB2108F1A1009BCF98 /* User.swift in Sources */,
+				D402373D21094B2C00D27737 /* ListViewController.swift in Sources */,
+				D4CA0E96210F957A000D3D43 /* SearchTableViewController.swift in Sources */,
+				D426FFCA210A869A008F5F82 /* ChooseCuisineViewController.swift in Sources */,
+				D4DBDFD32108F1BC009BCF98 /* CreateUsernameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +476,11 @@
 		};
 		D42C94DB2107A9AB00D47C02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C6842BE8BC0AF775C6E8E2 /* Pods-Syncrazy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Syncrazy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Syncrazy/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +494,11 @@
 		};
 		D42C94DC2107A9AB00D47C02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E29D675614EE39DCA6313DB /* Pods-Syncrazy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Syncrazy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Syncrazy/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
