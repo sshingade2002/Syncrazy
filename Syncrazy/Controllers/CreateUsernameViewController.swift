@@ -33,6 +33,7 @@ class CreateUsernameViewController: UIViewController {
             guard let user = user else { return }
             
             print("Created new user: \(user.name)")
+            print("\n\n\n\(user)\n\n\n")
             
             self.performSegue(withIdentifier: Constants.Segue.toChooseCuisine, sender: self)
         }

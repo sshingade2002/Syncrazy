@@ -24,9 +24,12 @@ struct UserService {
             
             ref.observeSingleEvent(of: .value, with: { (snapshot) in
                 let user = User(snapshot: snapshot)
+                print("\n\n\(snapshot)\n\n\n")
                 return completion(user)
+                
             })
         }
+       
     }
 }
 

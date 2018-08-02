@@ -10,6 +10,7 @@
 		D40237312108FB6900D27737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40237302108FB6900D27737 /* Constants.swift */; };
 		D402373B21093D4800D27737 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D402373A21093D4800D27737 /* Groups.storyboard */; };
 		D402373D21094B2C00D27737 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D402373C21094B2C00D27737 /* ListViewController.swift */; };
+		D41090342112B8C3002A6B31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41090332112B8C3002A6B31 /* User.swift */; };
 		D426FFC8210A44C7008F5F82 /* ChooseCuisines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */; };
 		D426FFCA210A869A008F5F82 /* ChooseCuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */; };
 		D42C94CC2107A9A900D47C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C94CB2107A9A900D47C02 /* AppDelegate.swift */; };
@@ -24,10 +25,10 @@
 		D4A7B6732110FBD800E4481E /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6722110FBD700E4481E /* Candy.swift */; };
 		D4A7B6752110FE8100E4481E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A7B6742110FE8100E4481E /* Main.storyboard */; };
 		D4A7B6772111114E00E4481E /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6762111114E00E4481E /* GroupViewController.swift */; };
+		D4A7B67A21112F6600E4481E /* ChooseGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B67921112F6600E4481E /* ChooseGroupViewController.swift */; };
+		D4A7B67C2111301800E4481E /* ChooseGroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B67B2111301800E4481E /* ChooseGroupTableView.swift */; };
+		D4A7B67E21116C6E00E4481E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B67D21116C6E00E4481E /* DetailViewController.swift */; };
 		D4CA0E90210AC2C0000D3D43 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */; };
-		D4CA0E96210F957A000D3D43 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E95210F957A000D3D43 /* SearchTableViewController.swift */; };
-		D4CA0E98210F99A9000D3D43 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E97210F99A9000D3D43 /* SearchViewController.swift */; };
-		D4DBDFCB2108F1A1009BCF98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCA2108F1A1009BCF98 /* User.swift */; };
 		D4DBDFCD2108F1AD009BCF98 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCC2108F1AC009BCF98 /* UserService.swift */; };
 		D4DBDFD12108F1BC009BCF98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */; };
 		D4DBDFD32108F1BC009BCF98 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */; };
@@ -41,6 +42,7 @@
 		D40237302108FB6900D27737 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D402373A21093D4800D27737 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
 		D402373C21094B2C00D27737 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D41090332112B8C3002A6B31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseCuisines.storyboard; sourceTree = "<group>"; };
 		D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCuisineViewController.swift; sourceTree = "<group>"; };
 		D42C94C82107A9A800D47C02 /* Syncrazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syncrazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,10 +59,10 @@
 		D4A7B6722110FBD700E4481E /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		D4A7B6742110FE8100E4481E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D4A7B6762111114E00E4481E /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		D4A7B67921112F6600E4481E /* ChooseGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGroupViewController.swift; sourceTree = "<group>"; };
+		D4A7B67B2111301800E4481E /* ChooseGroupTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGroupTableView.swift; sourceTree = "<group>"; };
+		D4A7B67D21116C6E00E4481E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		D4CA0E95210F957A000D3D43 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		D4CA0E97210F99A9000D3D43 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		D4DBDFCA2108F1A1009BCF98 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D4DBDFCC2108F1AC009BCF98 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +97,10 @@
 				D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */,
 				D402373C21094B2C00D27737 /* ListViewController.swift */,
 				D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */,
-				D4CA0E95210F957A000D3D43 /* SearchTableViewController.swift */,
-				D4CA0E97210F99A9000D3D43 /* SearchViewController.swift */,
 				D4A7B6762111114E00E4481E /* GroupViewController.swift */,
+				D4A7B67921112F6600E4481E /* ChooseGroupViewController.swift */,
+				D4A7B67B2111301800E4481E /* ChooseGroupTableView.swift */,
+				D4A7B67D21116C6E00E4481E /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,10 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				D4A7B6722110FBD700E4481E /* Candy.swift */,
-				D4DBDFCA2108F1A1009BCF98 /* User.swift */,
 				D47B713F21095287007F5037 /* ListViewCell.swift */,
 				D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */,
 				D4A7B670210FC3CC00E4481E /* SyncUsers.swift */,
+				D41090332112B8C3002A6B31 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,19 +323,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A7B6772111114E00E4481E /* GroupViewController.swift in Sources */,
+				D4A7B67E21116C6E00E4481E /* DetailViewController.swift in Sources */,
 				D4DBDFCD2108F1AD009BCF98 /* UserService.swift in Sources */,
 				D4A7B6732110FBD800E4481E /* Candy.swift in Sources */,
 				D42C94CE2107A9A900D47C02 /* ViewController.swift in Sources */,
 				D47B714021095287007F5037 /* ListViewCell.swift in Sources */,
 				D4A7B671210FC3CC00E4481E /* SyncUsers.swift in Sources */,
+				D41090342112B8C3002A6B31 /* User.swift in Sources */,
+				D4A7B67C2111301800E4481E /* ChooseGroupTableView.swift in Sources */,
 				D42C94CC2107A9A900D47C02 /* AppDelegate.swift in Sources */,
 				D4DBDFD12108F1BC009BCF98 /* LoginViewController.swift in Sources */,
 				D40237312108FB6900D27737 /* Constants.swift in Sources */,
 				D4CA0E90210AC2C0000D3D43 /* TableViewController.swift in Sources */,
-				D4CA0E98210F99A9000D3D43 /* SearchViewController.swift in Sources */,
-				D4DBDFCB2108F1A1009BCF98 /* User.swift in Sources */,
+				D4A7B67A21112F6600E4481E /* ChooseGroupViewController.swift in Sources */,
 				D402373D21094B2C00D27737 /* ListViewController.swift in Sources */,
-				D4CA0E96210F957A000D3D43 /* SearchTableViewController.swift in Sources */,
 				D426FFCA210A869A008F5F82 /* ChooseCuisineViewController.swift in Sources */,
 				D4DBDFD32108F1BC009BCF98 /* CreateUsernameViewController.swift in Sources */,
 			);

@@ -27,6 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // 4
             window?.makeKeyAndVisible()
         }
+        
+       /* window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UISplitViewController ()*/
+        
         return true
     }
 

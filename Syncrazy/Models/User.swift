@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
-class User {
+class User: NSObject {
     let uid: String
     let name: String
     
@@ -19,7 +19,7 @@ class User {
     }
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
-        let name = dict["name"] as? String
+            let name = dict["name"] as? String
             else {return nil }
         
         self.uid = snapshot.key
