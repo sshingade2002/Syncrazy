@@ -9,6 +9,12 @@ target 'Syncrazy' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'SwiftyJSON'
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
+  pod 'AlamofireImage', :git => 'https://github.com/Alamofire/AlamofireImage.git'
+  pod 'AlamofireNetworkActivityIndicator', :git => 'https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git'
+  pod 'Kingfisher', '~> 4.0'
+  pod 'FoldingCell'
 
   # Pods for Syncrazy
 

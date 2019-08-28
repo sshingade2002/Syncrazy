@@ -35,8 +35,12 @@ class CreateUsernameViewController: UIViewController {
             print("Created new user: \(user.name)")
             print("\n\n\n\(user)\n\n\n")
             
-            self.performSegue(withIdentifier: Constants.Segue.toChooseCuisine, sender: self)
+            
         }
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let chooseCuisineVC = storyboard.instantiateViewController(withIdentifier: "ChooseCuisineViewController")
+        
+        self.present(chooseCuisineVC, animated: true, completion: nil)
     }
     
     

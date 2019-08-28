@@ -11,7 +11,9 @@ import Foundation
 import UIKit
 class ChooseGroupViewController: UIViewController {
     @IBOutlet weak var tableViewGroup: UITableView!
-    
+//    @IBOutlet weak var numberOfMemebers: UILabel!
+//    
+//    @IBOutlet weak var groupName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -37,7 +39,7 @@ class ChooseGroupViewController: UIViewController {
         case "tospgroup":
             guard let indexPath = tableViewGroup.indexPathForSelectedRow else { return }
             
-            let destination = segue.destination as! GroupViewController
+            let destination = segue.destination as! SearchViewController
             
         case "addgroup":
             print("create note bar button item tapped")

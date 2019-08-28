@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D40237312108FB6900D27737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40237302108FB6900D27737 /* Constants.swift */; };
-		D402373B21093D4800D27737 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D402373A21093D4800D27737 /* Groups.storyboard */; };
 		D402373D21094B2C00D27737 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D402373C21094B2C00D27737 /* ListViewController.swift */; };
+		D40330AF211A3C2100D29E32 /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40330AE211A3C2100D29E32 /* GroupCollectionViewCell.swift */; };
+		D40330B1211A3E4D00D29E32 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40330B0211A3E4D00D29E32 /* Globals.swift */; };
+		D40330B3211B592A00D29E32 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40330B2211B592A00D29E32 /* Restaurant.swift */; };
+		D40330B5211B6C3E00D29E32 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40330B4211B6C3E00D29E32 /* Group.swift */; };
+		D40A8B5123075E5E003E4FF5 /* MemberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A8B5023075E5E003E4FF5 /* MemberTableViewController.swift */; };
 		D41090342112B8C3002A6B31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41090332112B8C3002A6B31 /* User.swift */; };
-		D426FFC8210A44C7008F5F82 /* ChooseCuisines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */; };
+		D42241D4211694CA00AAC72F /* AddedUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42241D3211694CA00AAC72F /* AddedUserView.swift */; };
+		D42241D82117CDCD00AAC72F /* AddedUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42241D72117CDCD00AAC72F /* AddedUserCollectionViewCell.swift */; };
 		D426FFCA210A869A008F5F82 /* ChooseCuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */; };
 		D42C94CC2107A9A900D47C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C94CB2107A9A900D47C02 /* AppDelegate.swift */; };
 		D42C94CE2107A9A900D47C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C94CD2107A9A900D47C02 /* ViewController.swift */; };
@@ -19,15 +24,18 @@
 		D42C94D32107A9AB00D47C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42C94D22107A9AB00D47C02 /* Assets.xcassets */; };
 		D42C94D62107A9AB00D47C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C94D42107A9AB00D47C02 /* LaunchScreen.storyboard */; };
 		D42C94DE2107AA2800D47C02 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C94DD2107AA2800D47C02 /* Login.storyboard */; };
+		D453DABB211BAEEF00ABD8BA /* RestuarantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453DABA211BAEEF00ABD8BA /* RestuarantViewController.swift */; };
+		D453DABD211C298F00ABD8BA /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453DABC211C298F00ABD8BA /* APICaller.swift */; };
 		D47B714021095287007F5037 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B713F21095287007F5037 /* ListViewCell.swift */; };
+		D48F0B7121142ADC005BFC4B /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48F0B7021142ADC005BFC4B /* Group.storyboard */; };
+		D48F0B7521142CBD005BFC4B /* GroupsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48F0B7421142CBD005BFC4B /* GroupsCollectionViewController.swift */; };
 		D4960FDC2108ECF100FC3FF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4960FDB2108ECF100FC3FF7 /* GoogleService-Info.plist */; };
 		D4A7B671210FC3CC00E4481E /* SyncUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B670210FC3CC00E4481E /* SyncUsers.swift */; };
-		D4A7B6732110FBD800E4481E /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6722110FBD700E4481E /* Candy.swift */; };
-		D4A7B6752110FE8100E4481E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A7B6742110FE8100E4481E /* Main.storyboard */; };
-		D4A7B6772111114E00E4481E /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6762111114E00E4481E /* GroupViewController.swift */; };
+		D4A7B6772111114E00E4481E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B6762111114E00E4481E /* SearchViewController.swift */; };
 		D4A7B67A21112F6600E4481E /* ChooseGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B67921112F6600E4481E /* ChooseGroupViewController.swift */; };
-		D4A7B67C2111301800E4481E /* ChooseGroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B67B2111301800E4481E /* ChooseGroupTableView.swift */; };
-		D4A7B67E21116C6E00E4481E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B67D21116C6E00E4481E /* DetailViewController.swift */; };
+		D4C39F89211CD9AC00CC029C /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C39F88211CD9AC00CC029C /* DemoCell.swift */; };
+		D4C39F8B211CDA8900CC029C /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C39F8A211CDA8900CC029C /* FoldingCell.swift */; };
+		D4C39F8D211CF8E400CC029C /* DemoCellStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C39F8C211CF8E400CC029C /* DemoCellStruct.swift */; };
 		D4CA0E90210AC2C0000D3D43 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */; };
 		D4DBDFCD2108F1AD009BCF98 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCC2108F1AC009BCF98 /* UserService.swift */; };
 		D4DBDFD12108F1BC009BCF98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */; };
@@ -40,10 +48,15 @@
 		6D3A9F36FFD7A026F7F81B34 /* Pods_Syncrazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syncrazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E29D675614EE39DCA6313DB /* Pods-Syncrazy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncrazy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy.release.xcconfig"; sourceTree = "<group>"; };
 		D40237302108FB6900D27737 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D402373A21093D4800D27737 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
 		D402373C21094B2C00D27737 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D40330AE211A3C2100D29E32 /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		D40330B0211A3E4D00D29E32 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		D40330B2211B592A00D29E32 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D40330B4211B6C3E00D29E32 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		D40A8B5023075E5E003E4FF5 /* MemberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewController.swift; sourceTree = "<group>"; };
 		D41090332112B8C3002A6B31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseCuisines.storyboard; sourceTree = "<group>"; };
+		D42241D3211694CA00AAC72F /* AddedUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedUserView.swift; sourceTree = "<group>"; };
+		D42241D72117CDCD00AAC72F /* AddedUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCuisineViewController.swift; sourceTree = "<group>"; };
 		D42C94C82107A9A800D47C02 /* Syncrazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syncrazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42C94CB2107A9A900D47C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,15 +66,18 @@
 		D42C94D52107A9AB00D47C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D42C94D72107A9AB00D47C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42C94DD2107AA2800D47C02 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D453DABA211BAEEF00ABD8BA /* RestuarantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantViewController.swift; sourceTree = "<group>"; };
+		D453DABC211C298F00ABD8BA /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		D47B713F21095287007F5037 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		D48F0B7021142ADC005BFC4B /* Group.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Group.storyboard; sourceTree = "<group>"; };
+		D48F0B7421142CBD005BFC4B /* GroupsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCollectionViewController.swift; sourceTree = "<group>"; };
 		D4960FDB2108ECF100FC3FF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D4A7B670210FC3CC00E4481E /* SyncUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUsers.swift; sourceTree = "<group>"; };
-		D4A7B6722110FBD700E4481E /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
-		D4A7B6742110FE8100E4481E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D4A7B6762111114E00E4481E /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		D4A7B6762111114E00E4481E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D4A7B67921112F6600E4481E /* ChooseGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGroupViewController.swift; sourceTree = "<group>"; };
-		D4A7B67B2111301800E4481E /* ChooseGroupTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGroupTableView.swift; sourceTree = "<group>"; };
-		D4A7B67D21116C6E00E4481E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D4C39F88211CD9AC00CC029C /* DemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		D4C39F8A211CDA8900CC029C /* FoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
+		D4C39F8C211CF8E400CC029C /* DemoCellStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCellStruct.swift; sourceTree = "<group>"; };
 		D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D4DBDFCC2108F1AC009BCF98 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -95,12 +111,12 @@
 				D42C94CD2107A9A900D47C02 /* ViewController.swift */,
 				D4DBDFCE2108F1BA009BCF98 /* LoginViewController.swift */,
 				D4DBDFD02108F1BB009BCF98 /* CreateUsernameViewController.swift */,
-				D402373C21094B2C00D27737 /* ListViewController.swift */,
 				D426FFC9210A869A008F5F82 /* ChooseCuisineViewController.swift */,
-				D4A7B6762111114E00E4481E /* GroupViewController.swift */,
+				D4A7B6762111114E00E4481E /* SearchViewController.swift */,
 				D4A7B67921112F6600E4481E /* ChooseGroupViewController.swift */,
-				D4A7B67B2111301800E4481E /* ChooseGroupTableView.swift */,
-				D4A7B67D21116C6E00E4481E /* DetailViewController.swift */,
+				D48F0B7421142CBD005BFC4B /* GroupsCollectionViewController.swift */,
+				D453DABA211BAEEF00ABD8BA /* RestuarantViewController.swift */,
+				D40A8B5023075E5E003E4FF5 /* MemberTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,6 +127,7 @@
 				D40237302108FB6900D27737 /* Constants.swift */,
 				D4960FDB2108ECF100FC3FF7 /* GoogleService-Info.plist */,
 				D42C94D72107A9AB00D47C02 /* Info.plist */,
+				D40330B0211A3E4D00D29E32 /* Globals.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -118,11 +135,19 @@
 		D402373421091C2400D27737 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D4A7B6722110FBD700E4481E /* Candy.swift */,
+				D4C39F8A211CDA8900CC029C /* FoldingCell.swift */,
+				D40330B4211B6C3E00D29E32 /* Group.swift */,
+				D4C39F88211CD9AC00CC029C /* DemoCell.swift */,
 				D47B713F21095287007F5037 /* ListViewCell.swift */,
 				D4CA0E8F210AC2C0000D3D43 /* TableViewController.swift */,
 				D4A7B670210FC3CC00E4481E /* SyncUsers.swift */,
 				D41090332112B8C3002A6B31 /* User.swift */,
+				D42241D3211694CA00AAC72F /* AddedUserView.swift */,
+				D42241D72117CDCD00AAC72F /* AddedUserCollectionViewCell.swift */,
+				D402373C21094B2C00D27737 /* ListViewController.swift */,
+				D40330AE211A3C2100D29E32 /* GroupCollectionViewCell.swift */,
+				D40330B2211B592A00D29E32 /* Restaurant.swift */,
+				D4C39F8C211CF8E400CC029C /* DemoCellStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,9 +158,7 @@
 				D42C94DD2107AA2800D47C02 /* Login.storyboard */,
 				D42C94D42107A9AB00D47C02 /* LaunchScreen.storyboard */,
 				D42C94CF2107A9A900D47C02 /* Main.storyboard */,
-				D402373A21093D4800D27737 /* Groups.storyboard */,
-				D4A7B6742110FE8100E4481E /* Main.storyboard */,
-				D426FFC7210A44C7008F5F82 /* ChooseCuisines.storyboard */,
+				D48F0B7021142ADC005BFC4B /* Group.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -165,9 +188,10 @@
 				D402373721091EA800D27737 /* Storyboard */,
 				D402373421091C2400D27737 /* Models */,
 				D4023732210917D300D27737 /* Controllers */,
-				D402373321091B8300D27737 /* Supporting */,
 				D42C94D22107A9AB00D47C02 /* Assets.xcassets */,
+				D453DABC211C298F00ABD8BA /* APICaller.swift */,
 				D4DBDFCC2108F1AC009BCF98 /* UserService.swift */,
+				D402373321091B8300D27737 /* Supporting */,
 			);
 			path = Syncrazy;
 			sourceTree = "<group>";
@@ -215,6 +239,11 @@
 				TargetAttributes = {
 					D42C94C72107A9A800D47C02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -241,11 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D426FFC8210A44C7008F5F82 /* ChooseCuisines.storyboard in Resources */,
 				D42C94DE2107AA2800D47C02 /* Login.storyboard in Resources */,
 				D42C94D62107A9AB00D47C02 /* LaunchScreen.storyboard in Resources */,
-				D4A7B6752110FE8100E4481E /* Main.storyboard in Resources */,
-				D402373B21093D4800D27737 /* Groups.storyboard in Resources */,
+				D48F0B7121142ADC005BFC4B /* Group.storyboard in Resources */,
 				D4960FDC2108ECF100FC3FF7 /* GoogleService-Info.plist in Resources */,
 				D42C94D32107A9AB00D47C02 /* Assets.xcassets in Resources */,
 				D42C94D12107A9A900D47C02 /* Main.storyboard in Resources */,
@@ -280,15 +307,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Syncrazy/Pods-Syncrazy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -322,22 +361,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A7B6772111114E00E4481E /* GroupViewController.swift in Sources */,
-				D4A7B67E21116C6E00E4481E /* DetailViewController.swift in Sources */,
+				D4A7B6772111114E00E4481E /* SearchViewController.swift in Sources */,
+				D4C39F8B211CDA8900CC029C /* FoldingCell.swift in Sources */,
+				D42241D4211694CA00AAC72F /* AddedUserView.swift in Sources */,
 				D4DBDFCD2108F1AD009BCF98 /* UserService.swift in Sources */,
-				D4A7B6732110FBD800E4481E /* Candy.swift in Sources */,
+				D40330AF211A3C2100D29E32 /* GroupCollectionViewCell.swift in Sources */,
+				D48F0B7521142CBD005BFC4B /* GroupsCollectionViewController.swift in Sources */,
+				D453DABB211BAEEF00ABD8BA /* RestuarantViewController.swift in Sources */,
 				D42C94CE2107A9A900D47C02 /* ViewController.swift in Sources */,
+				D453DABD211C298F00ABD8BA /* APICaller.swift in Sources */,
 				D47B714021095287007F5037 /* ListViewCell.swift in Sources */,
+				D40330B1211A3E4D00D29E32 /* Globals.swift in Sources */,
 				D4A7B671210FC3CC00E4481E /* SyncUsers.swift in Sources */,
 				D41090342112B8C3002A6B31 /* User.swift in Sources */,
-				D4A7B67C2111301800E4481E /* ChooseGroupTableView.swift in Sources */,
+				D40330B5211B6C3E00D29E32 /* Group.swift in Sources */,
+				D40330B3211B592A00D29E32 /* Restaurant.swift in Sources */,
+				D4C39F8D211CF8E400CC029C /* DemoCellStruct.swift in Sources */,
 				D42C94CC2107A9A900D47C02 /* AppDelegate.swift in Sources */,
+				D42241D82117CDCD00AAC72F /* AddedUserCollectionViewCell.swift in Sources */,
 				D4DBDFD12108F1BC009BCF98 /* LoginViewController.swift in Sources */,
 				D40237312108FB6900D27737 /* Constants.swift in Sources */,
+				D4C39F89211CD9AC00CC029C /* DemoCell.swift in Sources */,
 				D4CA0E90210AC2C0000D3D43 /* TableViewController.swift in Sources */,
 				D4A7B67A21112F6600E4481E /* ChooseGroupViewController.swift in Sources */,
 				D402373D21094B2C00D27737 /* ListViewController.swift in Sources */,
 				D426FFCA210A869A008F5F82 /* ChooseCuisineViewController.swift in Sources */,
+				D40A8B5123075E5E003E4FF5 /* MemberTableViewController.swift in Sources */,
 				D4DBDFD32108F1BC009BCF98 /* CreateUsernameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,8 @@
 //  Copyright © 2018 MakeSchool. All rights reserved.
 //
 
-import UIKit
+//TODO: Gotta gix bug
+
 import UIKit
 import FirebaseAuth
 import FirebaseUI
@@ -14,7 +15,9 @@ import FirebaseDatabase
 typealias FIRUser = FirebaseAuth.User
 class LoginViewController: UIViewController{
     
-    @IBOutlet weak var signInSegment: UISegmentedControl!
+    @IBOutlet weak var registerOrSignInButton: UIButton!
+    
+  /*  @IBOutlet weak var signInSegment: UISegmentedControl!
     
     @IBOutlet weak var signInLabel: UILabel!
     
@@ -22,30 +25,93 @@ class LoginViewController: UIViewController{
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!*/
     
-    var isSignIn: Bool = true
+    //var isSignIn: Bool = true
+  /*  @IBOutlet weak var registerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        registerButton.isHidden = true
+    }*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    @IBAction func signinSelectorChanged(_ sender: UISegmentedControl) {
+    @IBAction func registorOrSignInButtonTapped(_ sender: UIButton){
+        guard let authUI = FUIAuth.defaultAuthUI()
+            else { return }
+        
+        authUI.delegate = self
+        
+        let authViewController = authUI.authViewController()
+        present(authViewController, animated: true)
+    }
+    /*@IBAction func signinSelectorChanged(_ sender: UISegmentedControl) {
         isSignIn = !isSignIn
         
         if isSignIn {
             signInLabel.text = "Sign in"
-            signInButton.setTitle("Sign In", for: .normal)
+            registerButton.isHidden = true
+            signInButton.isHidden = false
+            
         }
         else {
             signInLabel.text = "Register"
-            signInButton.setTitle("Register", for: .normal)
+            signInButton.isHidden = true
+            registerButton.isHidden = false
         }
     }
     
+    func signInUser(email: String, pass: String)
+    {
+        Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
+            if let u = user {
+                print("\n\n\nim a little too cool for schoool\n\n\n")
+                //user is found go to home screen
+                self.performSegue(withIdentifier: "toHome", sender: self)
+            }
+            else {
+                //Error: check and show error message
+            }
+        })
+    }*/
     
+    func createUser(email: String, pass: String) {
+        let userAttrs = ["email": email, "password": pass]
+        Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+            //check that user isn't nil
+            print("\nwhat's up foo\n")
+
+            if let u = user {
+                //user is found go to homescreen
+                 print("\nwhat's up foo\n")
+                print(u)
+                // save new user to database using (user) object returned from callback
+                let userAttrs = ["email": email, "password": pass]
+                let ref = Database.database().reference().child("users").child(u.user.uid)
+                ref.setValue(userAttrs) {(error, ref) in
+                    if let error = error {
+                        
+                        assertionFailure(error.localizedDescription)
+                        print(u.user.uid)
+                    }
+                }
+            }
+            else {
+                //Error: check and show error message
+            }
+        })
+            
+    }
+  /*  @IBAction func registerButtonTapped(_ sender: Any) {
+        guard let email = emailTextField.text
+            else { return }
+        guard let pass = passwordTextField.text
+            else { return }
+        createUser(email: email, pass: pass)
+        
+        self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+        
+    }
     @IBAction func signInButtonTapped(_ sender: UIButton) {
         
         print("\n\n\nim actualy in here\n\n\n")
@@ -56,57 +122,16 @@ class LoginViewController: UIViewController{
         
         let userAttrs = ["email": email, "password": pass]
        
-        if isSignIn {
-            Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
-                if let u = user {
-                    print("\n\n\nim a little too cool for schoool\n\n\n")
-                    //user is found go to home screen
-                }
-                else {
-                    //Error: check and show error message
-                }
-            })
-        }
-        else {
-            Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
-                //check that user isn't nil
-                if let u = user {
-                    //user is found go to homescreen
-                    
-                    self.performSegue(withIdentifier: "toCreateUsername", sender: self)
-                    print("new usercreated")
-                }
-                else {
-                    //Error: check and show error message
-                }
-            })
-            
-            guard let firUser = Auth.auth().currentUser
-            else { return }
-            let userAttrs = ["email": email, "password": pass]
-            
-            let ref = Database.database().reference().child("users").child(firUser.uid)
-            
-            ref.setValue(userAttrs) {(error, ref) in
-                if let error = error {
-                    assertionFailure(error.localizedDescription)
-                 
-                }
-                
-                ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                    let user = User(snapshot: snapshot)
-                    print("\n\n\n\(snapshot)\n\n\n")
-                
-                })
-            }
-            
-        }
-    }
+       
+        signInUser(email: email, pass: pass)
+        
+        
+    }*/
     
     
    
 }
-   /* extension LoginViewController: FUIAuthDelegate{
+    extension LoginViewController: FUIAuthDelegate{
         func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?){
             
             if let error = error {
@@ -119,11 +144,25 @@ class LoginViewController: UIViewController{
             let userRef = Database.database().reference().child("users").child(user.uid)
             
             userRef.observeSingleEvent(of: .value, with: { (snapshot) in
+               
                 if let user = User(snapshot: snapshot) {
+                    
                     print("Welcome back, \(user.name).")
+                  //  self.performSegue(withIdentifier: Constants.Segue.toGroups, sender: self)
+                    
+                     let storyboard = UIStoryboard(name: "Group", bundle: nil)
+                    
+                    let groupsVC = storyboard.instantiateViewController(withIdentifier: "GroupsCollectionViewController")
+                    let nv = UINavigationController(rootViewController: groupsVC)
+                    self.present(nv, animated: true, completion: nil)
+                    
                 } else {
-                    self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
+                   // self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
+                     let storyboard = UIStoryboard(name: "Login", bundle: nil)
+                   let createUsernameVC = storyboard.instantiateViewController(withIdentifier: "CreateUsernameViewController")
+                    
+                  self.present(createUsernameVC, animated: true, completion: nil)
                 }
             })
     }
-}*/
+}

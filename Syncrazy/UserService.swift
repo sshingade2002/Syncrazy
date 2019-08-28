@@ -12,11 +12,10 @@ import FirebaseDatabase
 
 struct UserService {
     static func create(_ firUser: FIRUser, name: String, completion: @escaping (User?) -> Void) {
-        let userAttrs = ["name": name]
+        //let userAttrs = ["name": name]
         
-        let ref = Database.database().reference().child("users").child(firUser.uid)
-        
-        ref.setValue(userAttrs) {(error, ref) in
+        print(firUser.uid)
+        let ref = Database.database().reference().child("users/\(firUser.uid)/name").setValue(name) {(error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
                 return completion(nil)
@@ -31,5 +30,35 @@ struct UserService {
         }
        
     }
+    
+    
+    
+    static func fetchGroups(for user: User, completion: @escaping ([Group]) -> ()) {
+        
+        let dg = DispatchGroup()
+        
+        var groups: [Group] = []
+        
+        //get users from member uids
+        for aGroupName in user.groupUIDs {
+            dg.enter()
+            let ref = Database.database().reference().child("users").child(user.uid).child("group").child(aGroupName)
+            ref.observeSingleEvent(of: .value) { (snapshot) in
+                if let group = Group(snapshot: snapshot) {
+                    groups.append(group)
+                    //print(groups)
+                }
+                
+                dg.leave()
+            }
+        }
+        
+        dg.notify(queue: .main) {
+            completion(groups)
+        }
+        
+    }
+    
+    
 }
 
