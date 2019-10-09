@@ -26,14 +26,30 @@ class GroupsCollectionViewController: UICollectionViewController, groupCellDeleg
         
         self.present(alert, animated: true)
         
-        //TODO: finish this code
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-           
+            //TODO: delete from member in group
+            let deleteGroupUID = self.groups[memberRowSelected].UID
             guard let firUser = Auth.auth().currentUser else { return }
-            let ref = Database.database().reference()
-                .child("users/\(firUser.uid)/group/\(self.groups[memberRowSelected].UID)")
-            ref.removeValue()
-            print("You deleted group")
+            let ref1 = Database.database().reference().child("users/\(firUser.uid)/group/\(deleteGroupUID)")
+                .child("members")
+            var membersInDeleteGroup: [String] = []
+            ref1.observeSingleEvent(of: .value) { (snapshot) in
+                guard let dictOfpreferences = snapshot.value as? [String : Any]
+                    else { return }
+                print("in here")
+                membersInDeleteGroup = Array<String>(dictOfpreferences.keys)
+            }
+            for id in membersInDeleteGroup{
+                let ref2 = Database.database().reference()
+                    .child("users/\(id)/group/\(deleteGroupUID)")
+                 ref2.removeValue()
+                print("You deleted group \(id)")
+            }
+//            let ref = Database.database().reference()
+//                .child("users/\(firUser.uid)/group/\(self.groups[memberRowSelected].UID)")
+//
+//            ref.removeValue()
+            //print("You deleted group")
         }))
         
         alert.addAction(UIAlertAction(title: "No", style: .default, handler: { action in

@@ -131,7 +131,7 @@ class LoginViewController: UIViewController{
     
    
 }
-    extension LoginViewController: FUIAuthDelegate{
+    extension LoginViewController: FUIAuthDelegate {
         func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?){
             
             if let error = error {
