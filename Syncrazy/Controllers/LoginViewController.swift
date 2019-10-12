@@ -135,7 +135,7 @@ class LoginViewController: UIViewController{
         func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?){
             
             if let error = error {
-                assertionFailure("Error signing in: \(error.localizedDescription)")
+                print("Error signing in: \(error.localizedDescription)")
                 return
             }
             guard let user = authDataResult?.user
