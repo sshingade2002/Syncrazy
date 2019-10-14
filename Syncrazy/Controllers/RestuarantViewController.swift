@@ -29,6 +29,7 @@ class RestuarantViewController: UITableViewController, CLLocationManagerDelegate
         manager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             manager.delegate = self
+            manager.distanceFilter = 100.0
             manager.desiredAccuracy = kCLLocationAccuracyBest
             manager.startUpdatingLocation()
         }
@@ -61,16 +62,10 @@ class RestuarantViewController: UITableViewController, CLLocationManagerDelegate
                 strongSelf.restaurtantsForCells.append(DemoCellStruct(restaurant: element))
             }
             strongSelf.cellHeights = Array(repeating: Const.closeCellHeight, count: restaurants.count)
-            strongSelf.tableView.reloadData()
+            DispatchQueue.main.async {
+                strongSelf.tableView.reloadData()
+            }
         }
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
     
     enum Const {
@@ -107,7 +102,12 @@ class RestuarantViewController: UITableViewController, CLLocationManagerDelegate
 
 extension RestuarantViewController: restuarantCell {
     func sendYelpLogoTapped()  {
-       someVariable = true
+        let selectedCells = tableView.visibleCells.filter { $0.isSelected }
+        guard let currentCell = selectedCells.first, let indexPath = tableView.indexPath(for: currentCell) else { return }
+        let demoResturant = restaurtantsForCells[indexPath.row]
+        if let url =  URL(string: demoResturant.yelpLink) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
     
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
@@ -120,15 +120,7 @@ extension RestuarantViewController: restuarantCell {
             return
         }
         let demoResturant = restaurtantsForCells[indexPath.row]
-        
         cell.delegate = self
-        if someVariable {
-            if let url =  URL(string: demoResturant.yelpLink) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                someVariable = false
-            }
-        }
-        
         cell.exprensiveLabel.text = demoResturant.priceOfRestaurant
         cell.priceLabel.text = demoResturant.priceOfRestaurant
         cell.titleOfTheRestaurant.text = demoResturant.nameOfRestaurant
@@ -137,8 +129,6 @@ extension RestuarantViewController: restuarantCell {
         cell.addressPt2.text = demoResturant.display_addressOfRestaurant[1].stringValue
         cell.phoneNumber.text = demoResturant.displayPhone
         cell.reviewCountLabel.text = String(demoResturant.reviewCount)
-        
-        
         cell.outsidePriceLabel.text = demoResturant.priceOfRestaurant
         cell.outsideReviewCountLabel.text = String(demoResturant.reviewCount)
         switch demoResturant.ratingOfRestaurant {

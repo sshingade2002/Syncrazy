@@ -94,14 +94,6 @@ class GroupsCollectionViewController: UICollectionViewController, groupCellDeleg
         // Do any additional setup after loading the view.
         
         
-        
-        //self.reloadData()
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
         guard let firUser = Auth.auth().currentUser
             else { return }
         let ref = Database.database().reference().child("users").child(firUser.uid)
@@ -113,7 +105,26 @@ class GroupsCollectionViewController: UICollectionViewController, groupCellDeleg
                 self.groups = fetchedGroups
             })
         })
+        
+        //self.reloadData()
+        
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        
+//        guard let firUser = Auth.auth().currentUser
+//            else { return }
+//        let ref = Database.database().reference().child("users").child(firUser.uid)
+//        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+//            guard let user = User(snapshot: snapshot)
+//                else { return }
+//
+//            UserService.fetchGroups(for: user, completion: { (fetchedGroups) in
+//                self.groups = fetchedGroups
+//            })
+//        })
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
