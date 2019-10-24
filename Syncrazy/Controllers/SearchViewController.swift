@@ -70,7 +70,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("\n\n\nstuffff sutfff\n\n\n")
         if isFiltering() {
             return filteredUsers.count
         }

@@ -12,7 +12,10 @@ import UIKit
 import FirebaseAuth
 import FirebaseUI
 import FirebaseDatabase
+import FirebaseCore
+
 typealias FIRUser = FirebaseAuth.User
+
 class LoginViewController: UIViewController{
     
     @IBOutlet weak var registerOrSignInButton: UIButton!
@@ -41,6 +44,8 @@ class LoginViewController: UIViewController{
             else { return }
         
         authUI.delegate = self
+        let providers: [FUIAuthProvider] = [FUIEmailAuth()]
+        authUI.providers = providers
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)

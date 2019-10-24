@@ -25,7 +25,8 @@ class RestuarantViewController: UITableViewController, CLLocationManagerDelegate
     var restaurtantsForCells = [DemoCellStruct]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Initialize LocationManager
         manager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             manager.delegate = self
@@ -33,39 +34,30 @@ class RestuarantViewController: UITableViewController, CLLocationManagerDelegate
             manager.desiredAccuracy = kCLLocationAccuracyBest
             manager.startUpdatingLocation()
         }
-        
-//        APICaller.callFunc { [weak self] (restaurants) in
-//            guard let strongSelf = self else { return }
-//            strongSelf.restaurantsArray = restaurants
-//            for element in (strongSelf.restaurantsArray) {
-//                strongSelf.restaurtantsForCells.append(DemoCellStruct(restaurant: element))
-//            }
-//            strongSelf.setup()
-//        }
     }
-    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = manager.location else {
             print("no Location enbled")
             return
         }
+        
         let locValue:CLLocationCoordinate2D = location.coordinate
-        //print("locations = \(locValue.latitude) \(locValue.longitude)")
         self.restaurantsArray = []
         userLocation.latitude = locValue.latitude
         userLocation.longitude = locValue.longitude
-        APICaller.callFunc { [weak self] (restaurants) in
-            guard let strongSelf = self else { return }
+        APICaller.callFunc(location: userLocation,
+                           categories: "indpak", completion: { [weak self] (restaurants) in
+            guard let strongSelf = self, !restaurants.isEmpty else { return }
             strongSelf.restaurantsArray = restaurants
             for element in (strongSelf.restaurantsArray) {
                 strongSelf.restaurtantsForCells.append(DemoCellStruct(restaurant: element))
             }
             strongSelf.cellHeights = Array(repeating: Const.closeCellHeight, count: restaurants.count)
             DispatchQueue.main.async {
-                strongSelf.tableView.reloadData()
+                strongSelf.refreshHandler()
             }
-        }
+        })
     }
     
     enum Const {
@@ -80,7 +72,6 @@ class RestuarantViewController: UITableViewController, CLLocationManagerDelegate
         //cellHeights = Array(repeating: Const.closeCellHeight, count: Const.rowsCount)
         tableView.estimatedRowHeight = Const.closeCellHeight
         tableView.rowHeight = UITableViewAutomaticDimension
-        //tableView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "background"))
         if #available(iOS 10.0, *) {
             tableView.refreshControl = UIRefreshControl()
             tableView.refreshControl?.addTarget(self, action: #selector(refreshHandler), for: .valueChanged)

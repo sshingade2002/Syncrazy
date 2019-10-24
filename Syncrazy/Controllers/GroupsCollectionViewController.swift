@@ -17,7 +17,12 @@ class GroupsCollectionViewController: UICollectionViewController, groupCellDeleg
     
     var GroupUUID = ""
     func sendTap() {
-        self.performSegue(withIdentifier: "toShowRestaurants", sender: self)
+        let storyboard = UIStoryboard(name: "Group", bundle: nil)
+        let resturantVC = storyboard.instantiateViewController(withIdentifier: "RestuarantTableViewController")
+        self.navigationController?.pushViewController(resturantVC, animated: true)
+        
+        // alternate is use performSegue so it will present the VC not Push/stack VCs
+        //self.performSegue(withIdentifier: "toShowRestaurants", sender: self)
     }
     
     func toDeleteMembers(memberRowSelected: Int) {

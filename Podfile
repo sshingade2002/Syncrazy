@@ -9,6 +9,8 @@ target 'Syncrazy' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'FirebaseUI/Email'
+  
   pod 'SwiftyJSON'
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
   pod 'AlamofireImage', :git => 'https://github.com/Alamofire/AlamofireImage.git'
